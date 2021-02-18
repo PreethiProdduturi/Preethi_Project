@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite1</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">3,144</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,409</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test3</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,256</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">55,809</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">StepDefinations.testng.testngMultibrowser</td><td><a href="#m0">setup</a></td><td rowspan="1">1603824118226</td><td rowspan="1">3094</td></tr><tr><th colspan="4">Test1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">StepDefinations.testng.testngMultibrowser</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1603824121361</td><td rowspan="1">-1603824121361</td></tr><tr><th colspan="4">Test1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">StepDefinations.testng.testngMultibrowser</td><td><a href="#m2">performtest</a></td><td rowspan="1">1603824121355</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">StepDefinations.testng.testngMultibrowser</td><td><a href="#m3">performtest</a></td><td rowspan="1">1603824126349</td><td rowspan="1">5249</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">StepDefinations.testng.testngMultibrowser</td><td><a href="#m4">performtest</a></td><td rowspan="1">1603824149050</td><td rowspan="1">2178</td></tr></tbody>
+</table>
+<h2>Test1</h2><h3 id="m0">StepDefinations.testng.testngMultibrowser#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: &apos;4.0.0-alpha-5&apos;, revision: &apos;b3a0d621cc&apos;
+System info: host: &apos;LAPTOP-67JINTTS&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C60AE3+1706723]
+	Ordinal0 [0x00BC68C1+1075393]
+	Ordinal0 [0x00B3DFA9+516009]
+	Ordinal0 [0x00ACC70E+50958]
+	Ordinal0 [0x00AEBFD7+180183]
+	Ordinal0 [0x00AEBDDD+179677]
+	Ordinal0 [0x00AE9D4B+171339]
+	Ordinal0 [0x00AD1D4A+73034]
+	Ordinal0 [0x00AD2DC0+77248]
+	Ordinal0 [0x00AD2D59+77145]
+	Ordinal0 [0x00BDBB37+1162039]
+	GetHandleVerifier [0x00CFA7C6+508998]
+	GetHandleVerifier [0x00CFA504+508292]
+	GetHandleVerifier [0x00D0F617+594583]
+	GetHandleVerifier [0x00CFB036+511158]
+	Ordinal0 [0x00BD3FFC+1130492]
+	Ordinal0 [0x00BDD49B+1168539]
+	Ordinal0 [0x00BDD603+1168899]
+	Ordinal0 [0x00BF5B05+1268485]
+	BaseThreadInitThunk [0x756AFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777675F4+228]
+	RtlGetAppContainerNamedObjectPath [0x777675C4+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:75)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+	at StepDefinations.testng.testngMultibrowser.setup(testngMultibrowser.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">StepDefinations.testng.testngMultibrowser#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">StepDefinations.testng.testngMultibrowser#performtest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: &apos;4.0.0-alpha-5&apos;, revision: &apos;b3a0d621cc&apos;
+System info: host: &apos;LAPTOP-67JINTTS&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C60AE3+1706723]
+	Ordinal0 [0x00BC68C1+1075393]
+	Ordinal0 [0x00B3DFA9+516009]
+	Ordinal0 [0x00ACC70E+50958]
+	Ordinal0 [0x00AEBFD7+180183]
+	Ordinal0 [0x00AEBDDD+179677]
+	Ordinal0 [0x00AE9D4B+171339]
+	Ordinal0 [0x00AD1D4A+73034]
+	Ordinal0 [0x00AD2DC0+77248]
+	Ordinal0 [0x00AD2D59+77145]
+	Ordinal0 [0x00BDBB37+1162039]
+	GetHandleVerifier [0x00CFA7C6+508998]
+	GetHandleVerifier [0x00CFA504+508292]
+	GetHandleVerifier [0x00D0F617+594583]
+	GetHandleVerifier [0x00CFB036+511158]
+	Ordinal0 [0x00BD3FFC+1130492]
+	Ordinal0 [0x00BDD49B+1168539]
+	Ordinal0 [0x00BDD603+1168899]
+	Ordinal0 [0x00BF5B05+1268485]
+	BaseThreadInitThunk [0x756AFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777675F4+228]
+	RtlGetAppContainerNamedObjectPath [0x777675C4+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:75)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+	at StepDefinations.testng.testngMultibrowser.setup(testngMultibrowser.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m3">StepDefinations.testng.testngMultibrowser#performtest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test3</h2><h3 id="m4">StepDefinations.testng.testngMultibrowser#performtest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
